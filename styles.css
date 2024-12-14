@@ -1,0 +1,154 @@
+body {
+    background-image: url(weddingstage.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+h2 {
+    margin-top: 0;
+    text-align: center;
+    padding-bottom: 15px;
+    border-bottom: 2px solid black;
+}
+
+.container {
+    background-color: rgba(255, 255, 255, 1);
+    margin-left: 22%;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    max-width: 700px;
+    width: 50%;
+}
+
+form {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 15px;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+input,
+select {
+    width: 60%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+button {
+    padding: 10px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-left: 220px;
+    width: 50%;
+}
+
+button:hover {
+    background-color: #45a049;
+}
+
+.captcha-container {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.full-width {
+    grid-column: span 2;
+}
+
+.full-width input {
+    width: 95%;
+}
+
+.terms {
+    display: flex;
+    align-items: center;
+    grid-column: span 2;
+}
+
+.terms input {
+    margin-right: 10px;
+}
+
+input[type="checkbox"] {
+    width: 20px;
+    margin-bottom: 10px;
+    margin-right: 0;
+}
+
+.right {
+    width: 100%;
+    margin-left: 80px;
+}
+
+@media (max-width: 576px) {
+
+    form {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    label {
+        margin-left: 0;
+        /* Remove left margin for labels on small screens */
+    }
+
+    input,
+    select {
+        width: 80%;
+        /* Adjust input width for mobile */
+        margin-left: 0;
+        /* Align inputs to the left */
+    }
+
+    .right {
+        margin-left: 0;
+    }
+
+    .right input {
+        width: 63%;
+        /* Adjust the input width */
+    }
+
+    .right label {
+        margin-left: 0;
+    }
+
+    #address {
+        margin-left: 0;
+        width: 100%;
+        /* Make address input 100% width on mobile */
+    }
+
+    .terms {
+        flex-direction: row;
+        align-items: center;
+        grid-column: span 2;
+        font-size: 12px;
+    }
+
+    .terms input {
+        margin-right: 5px;
+    }
+
+    .captcha-container {
+        flex-direction: column;
+    }
+
+    #register {
+        margin-left: 20%;
+    }
+
+}
